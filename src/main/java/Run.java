@@ -6,7 +6,6 @@ public class Run {
         public static void main(String[] args) {
             WebDriver driver= Browser.invokeBrowser();
             Registration rp=new Registration(driver);
-            driver.get("https://nxtgenaiacademy.com/demo-site/");
             driver.manage().window().maximize();
             rp.setFirstName("user");
             rp.setLastName("random");

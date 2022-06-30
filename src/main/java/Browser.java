@@ -12,6 +12,7 @@ public class Browser {
             driver.manage().deleteAllCookies();
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+            driver.get("https://nxtgenaiacademy.com/demo-site/");
 
         }catch (Exception e){
             e.printStackTrace();
